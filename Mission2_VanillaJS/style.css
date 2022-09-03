@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 6000px;
+}
+
+.particles{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Mission2_VanillaJS/Assets/galaxy.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-family: 'Merienda One', cursive;
+    color: #efefef;
+    text-shadow: 0 0 25px #00ffff;
+    font-size: 5em;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 99;
+}
+
+.moon,
+.astronaut,
+.satellite1,
+.satellite2{
+    position: absolute;
+}
+
+.moon{
+    height: 700px;
+    width: 700px;
+    right: 0;
+    bottom: -45%;
+}
+
+.astronaut{
+    height: 200px;
+    right: 0px;
+    bottom: 250px;
+}
+
+.satellite1{
+    bottom: 0px;
+    right: 35%;
+    height: 100px;
+    z-index: -1;
+}
+
+.satellite2{
+    top: 0;
+    left: 0;
+    height: 200px;
+}
